@@ -1,0 +1,46 @@
+  
+{% extends "master.html" %}
+
+{% block title %}
+  Details about {{ mytruck.truck_make }} {{ mytruck.truck_model }}
+{% endblock %}
+
+
+{% block content %}
+  <h1>{{ mytruck.truck_make }} {{ mytruck.truck_model }}</h1>
+  
+  <p>Milage: {{ mytruck.milage }}</p>
+  <p>Release year: {{ mytruck.release }}</p>
+  <p>Color: {{ mytruck.color }}</p>
+  <p>Image: <img style='max-width:500px' src={{mytruck.image.url}} alt=""/></p>
+ <!-- Video loaded through admin Start -->
+ <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet" />
+ <p> Video: <video
+  id="my-video"
+  class="video-js"
+  controls
+  preload="auto"
+  width="500"
+  height="264"
+  poster=""
+  data-setup="{}"
+  loop = "True"
+
+>
+Video:  <source src="{{mytruck.video.url}}" type="video/mp4" />
+ 
+</video></p>
+
+        <script src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
+
+   <!-- Video loaded through admin END -->
+  
+  <!--p>Video: <video style='max-width:600px' class="video-fluid" autoplay loop muted>
+    <source src="{{mytruck.video.url}}" type="video/mp4"/>
+            </video>
+          </p-->
+
+  
+  <p>Back to <a href="/trucks">Trucks</a></p>
+  
+{% endblock %}

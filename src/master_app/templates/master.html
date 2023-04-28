@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="{% static 'mystile.css' %}">
+  <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+
+<div class="topnav">
+  <p>The site is under construction<br></p>
+  <a href="/">HOME</a> ||
+  <a href="/sedan_cars">SEDAN CARS</a>|
+  <a href="/suvs">SUV</a>|
+  <a href="/trucks">TRUCKS</a>
+</div>
+
+{% block content %}
+{% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+{% load static %}
+<!DOCTYPE html>
+<html> 
+<link rel="stylesheet" href="{% static 'myglobal.css' %}">
+<body>
+
+{% for x in sedan_cars %}
+  <h1>{{ x }}</h1>
+{% endfor %}
+
+<p>In views.py you can see what the sedan_cars variable looks like.</p>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+
+{% extends "master.html" %}
+
+{% block title %}
+Car Shop Inventory List of all vehicles
+{% endblock %}
+
+
+{% block content %}
+  <div class="mycard">
+    <h1>TRUCKS</h1>
+    <ul>
+      {% for x in mytrucks %}
+        <li onclick="window.location = 'details/{{ x.id }}'">{{ x.truck_make }} {{ x.truck_model }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock %}
