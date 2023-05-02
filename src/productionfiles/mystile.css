@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
 body {
-  background-color: #7df8fb;
+  background-color: #f1c166;
   margin:0;
   font: 600 18px 'Source Sans Pro', sans-serif;
   letter-spacing: 0.64px;
@@ -61,5 +61,5 @@ a:link, a:visited {
 .main, .main h1 {
   text-align:center;
   color:#187506;
-  background-color: #7df8fb;
+  background-color: #f1c166;
 }

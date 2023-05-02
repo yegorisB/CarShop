@@ -13,9 +13,9 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 import os
 
-import json
-with open('/etc/config.json') as config_file:
-       config = json.load(config_file)
+#import json
+#with open('/etc/config.json') as config_file:
+#       config = json.load(config_file)
 
 
 
@@ -28,14 +28,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 
-SECRET_KEY = config['SECRET_KEY']
-#SECRET_KEY = 
+#SECRET_KEY = config['SECRET_KEY']
+SECRET_KEY = "django-insecure-s#2cpy%w0t@xltso&2^=j-s+ywk)l@l_)ahnv-7-xcu4*%j7&0"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
- ALLOWED_HOSTS = ['rock.my-ybi.online','www.rock.my-ybi.online',]
-#ALLOWED_HOSTS = [*]
+#ALLOWED_HOSTS = ['rock.my-ybi.online','www.rock.my-ybi.online',]
+ALLOWED_HOSTS = ['127.0.0.1',]
 
 # Application definition
 
