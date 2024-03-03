@@ -7,15 +7,15 @@
 
 
 {% block content %}
-  <h1>{{ mysuv.suv_make }} {{ mysuv.suv_model }}</h1>
+  <h1 class="details">{{ mysuv.suv_make }} {{ mysuv.suv_model }}</h1>
   
-  <p>Milage: {{ mysuv.milage }}</p>
-  <p>Release year: {{ mysuv.release }}</p>
-  <p>Color: {{ mysuv.color }}</p>
-  <p>Image: <img style='max-width:500px' src={{mysuv.image.url}} alt=""/></p>
+  <p class="details">Milage: {{ mysuv.milage }}</p>
+  <p class="details">Release year: {{ mysuv.release }}</p>
+  <p class="details">Color: {{ mysuv.color }}</p>
+  <p class="details">Image: <img style='max-width:500px' src={{mysuv.image.url}} alt=""/></p>
  <!-- Video loaded through admin Start -->
  <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet" />
- <p> Video: <video
+ <p class="details"> Video: <video
   id="my-video"
   class="video-js"
   controls
@@ -41,6 +41,6 @@ Video:  <source src="{{mysuv.video.url}}" type="video/mp4" />
           </p-->
 
   
-  <p>Back to <a href="/suvs">SUV</a></p>
+  <p class="details">Back to <a href="/suvs">SUV</a></p>
   
 {% endblock %}
