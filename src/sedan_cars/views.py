@@ -12,7 +12,7 @@ def sedan_cars(request):
 
 def details(request, id):
   mysedan_car = Sedan_car.objects.get(id=id)
-  template = loader.get_template('details.html')
+  template = loader.get_template('detailsSedan.html')
   context = {
     'mysedan_car': mysedan_car,
   }
