@@ -1,12 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+h1.details {
+  margin-left: 150px;
+}
+
+ p.details {
+  margin-left: 150px;
+}
+
 body {
   background-color: #f1c166;
-  margin:0;
+  margin: 0px;
   font: 600 18px 'Source Sans Pro', sans-serif;
   letter-spacing: 0.64px;
   color: #585d74;
 }
+
+p.topnav{
+  margin:0;
+}
+
+
 .topnav {
+  margin:0;
   background-color:#187506;
   color:#d4f064;
   padding:10px;
@@ -58,7 +73,7 @@ li:hover {
 a:link, a:visited {
   color: #187506; 
 }
-.main, .main h1 {
+.main, .main h1, .main h3  {
   text-align:center;
   color:#187506;
   background-color: #f1c166;
